@@ -3,7 +3,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Classebanco teste1 = new Classebanco
-        teste1.estasacando();
+        Console.WriteLine("Banco Etec MCM");
+        Conta c = new Conta();
+        //c.Saldo = 1500;
+        c.Depositar(1500);
+        c.AcertarLimite(500);
+        c.Sacar(200);
+        //Console.WriteLine("Saldo " + c.Saldo + " Seu limite é de: " +c.Limite);
+        Console.WriteLine("Saldo " + c.MostrarSaldo());
     }
 }
