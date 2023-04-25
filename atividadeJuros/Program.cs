@@ -8,11 +8,13 @@ class Program
 
         banco.cliente ="Anderson";
         Console.Write(banco.cliente + " digite o valor do seu emprestimo:");
-        banco.valor = double.Parse(Console.ReadLine());
+        string? textovalor = Console.ReadLine();
+        double valor = Convert.ToDouble(textovalor);
+        banco.valor = valor;
 
         Console.WriteLine("Valor empréstimo: "+ banco.valor);
-        Console.WriteLine("Seus juros: "+ banco.juros);
-        Console.WriteLine("Juros mensais: "+ banco.mensal);
+        Console.WriteLine("Seus juros: "+ banco.juros());
+        Console.WriteLine("Juros mensais: "+ banco.mensal());
 
         banco.saldo = 2000;
         
