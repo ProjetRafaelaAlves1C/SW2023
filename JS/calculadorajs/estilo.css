@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color: red;
+}
+
+bnt{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(226, 43, 43); 
+  }
